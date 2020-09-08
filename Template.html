@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{IMAGENAME}}</title>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #336699;
+        }
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
+        }
+        .blue {
+            color: blue;
+        }
+        .main {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+            background-color: white;
+            width: 900px;
+            max-width: 100%;
+            min-width: 600px;
+            box-shadow: 0px 0px 12px #003366;
+        }
+        .text {
+            padding: 12px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+    <meta http-equiv="refresh" content=\"""" + str(REFRESH_RATE) + """;url=Scoring Report.html">
+</head>
+<body>
+    <div class="main">
+        <div class="text">
+            <p align=center style="text-align:center">
+            <table align="center">
+                <tr>
+                    <td align="center" width="34%"><img src="cp_logo.jpeg" width="150" height="150" border="0" /></a></td>
+                    <td align="center"><img src="tts.jpg" width="100" height="200" border="0" /></a></td>
+                </tr>
+                <tr>
+                    <td align="center">CyberPatriot</td>
+                    <td align="center">Troy HS Cyber Defense</td>
+                </tr>
+            </table>
+            </p>
+            <h1>{{IMAGENAME}}</h1>
+            
+            <h3 class="center">Scoring Engine Running Time: {{RUNTIME}}</h3>
+            <h3 class="center">Current Team ID: <span style="color:green">{{NAME}}</span></h3>
+            <h2>{{POINTS}} out of 100 points received</h2>
+            <p>
+            <p>
+            <h3>Connection Status: <span style="color:green">Scoring Data Uploaded Successfully: No Errors Detected</span></h3>
+            <p>
+                Internet Connectivity Check: <span style="color:green">OK</span> <br>
+            </p>
+            <h3>{{CURRENT}} out of {{VULNS}} scored security issues fixed, for a gain of {{POINTS}} points:</h3>
+            <p>
+                {{LIST}}
+            </p>
+            <p align=center style="text-align:center">The Troy Cyber
+                Competition System is the property of Troy High School.
+            </p>
+            <p align=center style="text-align:center">All rights reserved.</p>
+        </div>
+    </div>
+    <p align=center style="text-align:center">Scoring Engine by Joseph Xu, Gabriel Fok, Christos Bakis, Clement Chan, Jimmy Li. Web Design by CyberPatriot, modified by Clement Chan.
+        </br>Credits to CyberPatriot.
+    </p>
+</body>
+</html>
