@@ -1,10 +1,10 @@
 # cybersec-educational-tools
 This project contains a scoring engine for Ubuntu OS. The scoring engine checks to see if a student has caught certain vulnerabilities on the system and provides real-time feedback on student progress. For example, if the firewall is off, then the scoring engine will reward points to the student if they turn it back on. This allows students to gain hands-on projects at securing everything from web servers to standalone workstations. 
 
-## how it works:
+## How it works:
 The teacher implements a list of vulnerabilities on a virtual machine and records them in engine.py, which will run every 30 seconds. As the student secures the system, the scoring engine will update Template.html to display a list of the vulnerabilites that the student caught correctly. The student is finished when they reach all 100 points or when the teacher calls time. 
 
-#### instructions
+#### Instructions
 
     on the desktop, create a file called "Set Name for Scoring Report" and inside, write the exact words YOUR FULL NAME: [id]
     mkdir /opt/temp and then copy cp_logo.jpeg, tts.jpg, engine.py, Template.html, time.txt into /opt/temp/ a) Make sure the permissions on /opt/temp and the contents inside are owned by the standard user that the competitor is intended to use(not root or anyone else). Make /opt/temp readable to that standard user: chmod u+r /opt/temp/* /opt/temp
@@ -49,7 +49,7 @@ ExecStart=(path to pyconcrete cmd) /opt/temp/engine.pye
 [Install]
 WantedBy=multi-user.target
 
-#### testing the scoring engine
+#### Testing the scoring engine
 
     systemctl daemon-reload
     systemctl enable engine
