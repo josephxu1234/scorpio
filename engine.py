@@ -36,14 +36,7 @@ name = name[16:-1]
 namefile.close()
 lastPoints = 0 
 vulns = []
-
-
-"""variables used by windows-edition scorpio implementation
-honestly a lot of stuff needs cleaning but when i do clean something breaks soooo 
-for example im not relying on the STARTTIME, UPDATETIME, TOTALTIME stuff at all and i'm just using my own time mechanism
-but some of the remnants are still there :,(
-just dont touch it lol
-"""
+#scorpio variables
 NAME = name
 IMAGE_NAME = imageName
 STARTTIME = datetime.utcnow()
